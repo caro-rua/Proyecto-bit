@@ -41,57 +41,75 @@
 
     <div class="container text-center">
         <div class="registro-titulo">
-            <h1 class="textoppal1">Registrarte</h1>
+            <h1 class="textoppal1">REGISTRARSE</h1>
             <h5>Es rápido y fácil.</h5>
             <p>Y disfruta de toda la información que tenemos para usted de nuestros sitios turísticos con ofertas, también podrás compartir 
                 información de interés para los demás turistas que buscan de igual manera la mejor experiencia.</p>
         </div>
     </div>
 
-    <div class="container text-center">
-        <div class="row col-4">
-            <form name=tuformulario>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre y Apellidos</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Nunca compartiremos su información con nadie más.</div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo electronico</label>
-                    <input type="email" class="form-control" id="correo" name="correo">
-                </div>
-
-                <div class="mb-4">
-                    <label for="telefono" class="form-label">Numero de telefono</label>
-                    <input type="text" class="form-control" id="telefono">
-                </div>
-
-                <div>
-                    <select id="val2" class="form-select mb-3" aria-label="Disabled select example" oninput="registro()" >
-                        <option selected>Selecciones su sexo</option>
-                        <option value="1">Femenino</option>
-                        <option value="2">Masculino</option>
-                        <option value="3">Otro</option>
-                    </select>
-
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Quiero recibir información al correo electrónico</label>
+    <div id="formulario" class="container text-center">
+        <div class="row">
+            <div class="col-4">
+                <form name=tuformulario>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre y Apellidos</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su información con nadie más.</div>
                     </div>
 
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Quiero recibir información al número de teléfono</label>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo">
                     </div>
 
+                    <div class="mb-4">
+                        <label for="telefono" class="form-label">Número de teléfono</label>
+                        <input type="text" class="form-control" id="telefono">
+                    </div>
+
+                    <div>
+                        <select id="val2" class="form-select mb-3" aria-label="Disabled select example" oninput="registro()" >
+                            <option selected>Seleccione su sexo</option>
+                            <option value="1">Femenino</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Otro</option>
+                        </select>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Quiero recibir información al correo electrónico</label>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Quiero recibir información al número de teléfono</label>
+                        </div>
+
+                    </div>
+                    <button onclick="registro ()" id="pin1" type="submit"    class="btn btn-primary m-3">Enviar</button>
+                 </form>
+            </div>  
+
+  
+            <div class="col-12 col-md-5 col-lg">
+                <div class="form formu2">
+                  <form class="login-form">
+                    <input type="text" placeholder="nombre usuario o correo"/>
+                    <input type="password" placeholder="contraseña"/>
+                    <button>Ingresar</button>
+                    <p class="message">¿No está registrado? <a href="registrate.html">Crear una cuenta</a></p>
+                  </form>
                 </div>
-                <button onclick="registro ()" id="pin1" type="submit"    class="btn btn-primary m-3">Registrar</button>
-                
-            </form>
+              </div>
+
+
+
 
         </div>
     </div>
+
+    
 
 
     <footer id="pie-pagina" class="text-center text-lg-start text-black" style="background-color: #F4FCD9">

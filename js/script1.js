@@ -1,19 +1,9 @@
-
-
-
-function registro ()
-{
-
-    
-    
-        
-    
-let nombre = document.getElementById("nombre").value 
-let correo = document.getElementById("correo").value 
-let  telefono = document.getElementById("telefono").value
-let valor = document.getElementById("val2").value
-
- 
+function registro (){
+  
+let nombre = document.getElementById("nombre").value;
+let correo = document.getElementById("correo").value;
+let  telefono = document.getElementById("telefono").value;
+let valor = document.getElementById("val2").value;
 
 const emailRegex = /\S+@\S+\.\S+/
 
@@ -26,11 +16,6 @@ if(  nombre ==""){
         text: 'Falta el nombre',
         
       })
-    
-    
-    
-
-
 
 }
 
@@ -65,23 +50,13 @@ else if( telefono==""){
                    
         }
     else{
-       
-           
-            Swal.fire({
-            icon: 'success',
-            title: 'Oops...',
-            text: 'los datos estan bien ',
-            
-          })
-    
-
-
+      Swal.fire({
+        icon: 'success',
+        title: 'Oops...',
+        text: 'los datos estan bien ',
+        
+      })
           }
-
-
-    
-
-
 
   console.log(valor) 
   switch (valor) {
@@ -113,15 +88,19 @@ else if( telefono==""){
  }
    else {
 
-   
     document.tuformulario.submit()
 
    }
  
-    
-    
- 
+
 }
+
+//login
+
+$('.message a').click(function(){
+  $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
    
   
    
