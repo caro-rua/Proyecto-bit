@@ -1,11 +1,27 @@
 body{
-    font-family: 'Rubik', sans-serif !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+.textoppal1{
+    font-weight:600;
+}
+
+.barra-logo{
+    display: block !important;
 }
 
 .barra{
     background-color: #F4FCD9;
 }
 
+.navbar-nav a{
+    border: none !important;
+}
+
+.bloque-2{
+    background-color: #F0FFC2;
+    color: #019267;
+}
 .tarjetero {
     -webkit-perspective: 800;
     perspective: 800;
@@ -63,8 +79,6 @@ body{
 .card-img-overlay{
 
     cursor:pointer; 
-    
-
 
 }
 
@@ -78,4 +92,13 @@ body{
 
 .margin-barra{
     margin-top: 147px;
+}
+
+.carrusel img{
+    height: 450px;
+}
+
+.bloque-2{
+    background-color: #DDDDDD;
+    color: #BE8C63;
 }
